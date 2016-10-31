@@ -73,6 +73,11 @@ func (m *Moment) GetTime() time.Time {
 	return m.time
 }
 
+func (m *Moment) SetTime(time time.Time) *Moment {
+	m.time = time
+	return m
+}
+
 func (m *Moment) Now() *Moment {
 	m.time = time.Now()
 
